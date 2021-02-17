@@ -51,7 +51,9 @@ dependencies {
 	compile('org.hibernate.validator:hibernate-validator')
 	compile('javax.validation:validation-api')
 }
-
+test {
+	useJUnitPlatform()
+}
 //export test coverage
 jacocoTestReport {
 	reports {
